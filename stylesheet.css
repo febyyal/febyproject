@@ -1,0 +1,540 @@
+/* Ketik code Anda dibaris terakhir */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* header */
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  overflow: hidden;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: rgba(34, 49, 52, 0.9);
+  display: block;
+  transition: all 0.5s;
+}
+.header-right a:hover {
+  background-color: rgb(253, 203, 44);
+  color: white;
+}
+span.menu-icon {
+  display: none;
+  color: rgb(12, 12, 12);
+  font-size: 25px;
+  padding: 21px 0;
+}
+
+
+
+/* main & top wrapper */
+.top-wrapper {
+  padding: 250px 0 250px 0;
+  background-image: url(https://beta.ui.ac.id/wp-content/uploads/2014/04/UI_Web-Size.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 8px #16141e;
+  opacity: 0.8;
+}
+.top-wrapper .container {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top-wrapper h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.top-wrapper h2 {
+  font-size: 2.7rem;
+}
+
+
+
+/* lesson page */
+.lesson-wrapper {
+  background-color: #fafafa;
+  padding: 50px 0px;
+  text-align: center;
+}
+.heading h2 {
+  font-size: 50px;
+  color: rgb(7, 60, 100);
+}
+.underline {
+  width: 200px;
+  height: 3px;
+  background-color: rgb(253, 203, 44);
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.heading h3 {
+  width: 65%;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+  color: #2d314d;
+}
+.lessons {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+}
+.lesson {
+  width: 20%;
+  border-radius: 10px;
+  padding: 35px 14px;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  border-radius: 0.3125rem;
+  overflow: hidden;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+}
+.lesson:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.lesson h3 {
+  color: #2d314d;
+  height: 40px;
+  margin-bottom: 20px;
+  font-size: 22px;  
+}
+.txt-contents {
+  color: #9698a6;
+  text-align: left;
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.lesson .btn {
+  padding: 12px 24px;
+  color: #fafafa;
+  background-color:black;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+  width: 100%;
+}
+.btn:hover {
+  opacity: 1;
+}
+
+
+
+
+
+/* Responsive Web Design */
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+  
+  .top-wrapper h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .top-wrapper h2 {
+    font-size: 1.5rem;
+  }
+
+  .lesson {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .txt-contents {
+    height: auto;
+  }
+  .lesson h3 {
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+.footer-col{
+        width:50%;
+        margin-bottom: 30px;
+    }
+
+
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+
+  header .container {
+    flex-direction: column;
+  }
+  .header-left {
+    width: 100%;
+  }
+  header.show-links {
+    height: auto;
+  }
+
+  .header-left span.menu-icon {
+    display: block;
+  }
+
+  .top-wrapper {
+    text-align: left;
+  }
+
+  .lesson {
+    width: 100%;
+    height: auto;
+  }
+  .informasi{
+    width: 350px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left : 10px;
+  }
+  .informasi .btn{
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+  }
+  .informasi h2{ 
+    font-size:18px}
+
+.footer-col{
+        width:100%;
+        margin-bottom: 30px;
+    }
+
+}
+
+.informasi{
+  background-color: rgb(253, 203, 44);
+  width: 100%;
+  height: 250px;
+  padding: 75px;
+}
+.informasi .btn{
+  padding: 12px 24px;
+  color: #fafafa;
+  background-color:#26292b;
+  display: inline-block;
+  border-radius: 4px;
+  text-align: center;
+  width: 200px;
+  font-size: 16px;
+}
+.informasi .btn:hover{
+  color:#fff;
+  background-color: rgba(0, 0, 0, 1) ;
+}
+
+
+.informasi h2{
+  padding-top: 10px;
+}
+
+
+.sejarah{
+  width: 100%;
+  height: 75px;
+  background-color:#26292b;
+  color: #fafafa;
+  text-align: left;
+}
+
+.sejarah h1{
+	padding-top: 20px;
+	padding-bottom: 20px;
+  padding-left: 100px;
+  text-align: left;
+}
+
+
+.isi-sejarah {
+	width: 100%;
+	padding-left: 100px;
+	padding-right: 150px;
+}
+
+.isi-sejarah p{
+	font-size: 18px;
+  padding-top: 5px;
+  text-align: justify;
+}
+
+.sub-title{
+	font-weight: bold;
+	border-bottom: 1px solid grey;
+}
+
+
+.visimisi{
+  width: 100%;
+  height: 75px;
+  background-color: #26292b;
+  color:#fff;
+  text-align: justofy;
+  margin-top:20px;
+}
+
+.visimisi h1{
+	padding-top: 20px;
+	padding-bottom: 20px;
+  padding-left: 100px;
+  text-align: justify;
+}
+
+.visi {
+	width: 100%;
+	padding-left: 100px;
+	padding-right: 150px;
+}
+
+.visi p{
+	font-size: 18px;
+  padding-top: 5px;
+  text-align: justify;
+}
+.visi h2{
+	text-align: center;
+	border-bottom: solid 2px gray;
+} 
+
+.tebal{
+	font-weight: bold;
+}
+
+.bullet{
+	font-weight: bold;
+	font-size: 36px;
+}
+
+.misi {
+	width: 100%;
+	padding-left: 100px;
+	padding-right: 150px;
+	padding-top: 20px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.misi li{
+	font-size: 18px;
+  padding-top: 5px;
+  list-style: square;
+  text-align: justify;
+}
+
+
+
+
+
+
+input[type=text]{
+	width: 300px;
+	height: 50px;
+	font-size: 14px;
+}
+
+input[type=submit]{
+	width: 150px;
+	height: 50px;
+	font-size: 14px;
+}
+
+textarea{
+	width:400px;
+	height: 100px;
+	font-size: 14px;
+}
+ 
+
+
+
+.containerfooter {
+  max-width:1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row ul {
+  list-style: none;
+  text-align: left;
+}
+footer {
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  background-color:#26292b;
+  padding:70px 0;
+}
+
+.footer-col {
+  width:25%;
+  padding:0 15px;
+
+} 
+.footer-col h3 {
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500; 
+  text-align: left;
+  position: relative;
+  padding-left:35px;
+}
+
+.footer-col h3::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color:wheat;
+  height: :2px;
+  box-sizing:border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #bbb;
+  text-decoration:none;
+  font-weight: 300;
+  color: #fff;
+  display:block;
+  transition:all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #bbb;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align:center;
+  line-height:40px;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color:#24262b;
+  background-color: #fff;
+}
+.footer-emailform h4 {
+  margin-bottom: 2;
+  color:#fff
+}
+#footer-email {
+  width:250px;
+  height:40px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding-left: 0.5rem;
+  font-size: :1rem;
+  margin-bottom:1rem;
+}
+
+#footer-email::placeholder {
+  color: #b1b1b1;
+}
+#footer-email-btn{
+  width: 100px;
+  height:40px;
+  border-radius: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align:center;
+  line-height:40px;
+  color: #fff;
+  transition: all 0.5s ease;
+  float:left;
+}
+#footer-email-btn:hover {
+  color:#24262b;
+  background-color: silver;
+}
+
